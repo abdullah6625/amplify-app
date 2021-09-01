@@ -42,3 +42,12 @@ export const deleteTodo = /* GraphQL */ `
     }
   }
 `;
+// "graphqltransformer": {
+//   "addmissingownerfields": true,
+//   "improvepluralization": true,
+//   "validatetypenamereservedwords": true,
+//   "useexperimentalpipelinedtransformer": false,
+//   "enableiterativegsiupdates": true,
+//   "secondarykeyasgsi": true,
+//   "skipoverridemutationinputtypes": true
+// },
