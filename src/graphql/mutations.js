@@ -1,7 +1,7 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-// export const createTodo = funct{/* GraphQL */ 
+// export const createTodo = {/* GraphQL */ 
 //    mutation CreateTodo(name,id)
 //   {
 //     createTodo(input: $input, condition: $condition) {
@@ -14,8 +14,8 @@
 //   }
 // }
 // ;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
+// export const updateTodo = /* GraphQL */ `
+  `mutation UpdateTodo(
     $input: UpdateTodoInput!
     $condition: ModelTodoConditionInput
   ) {
