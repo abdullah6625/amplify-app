@@ -3,7 +3,7 @@ import './App.css';
 import { API } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 // import { listNotes } from './graphql/queries';
-import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
+// import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
 
 const initialFormState = { name: '', description: '' }
 
@@ -20,12 +20,12 @@ function App() {
   //   setNotes(apiData.data.listNotes.items);
   // }
 
-  async function createNote() {
-    if (!formData.name || !formData.description) return;
-    await API.graphql({ query: createNoteMutation, variables: { input: formData } });
-    setNotes([ ...notes, formData ]);
-    setFormData(initialFormState);
-  }
+  // async function createNote() {
+  //   if (!formData.name || !formData.description) return;
+  //   await API.graphql({ query: createNoteMutation, variables: { input: formData } });
+  //   setNotes([ ...notes, formData ]);
+  //   setFormData(initialFormState);
+  // }
 
   // async function deleteNote({ id }) {
   //   const newNotesArray = notes.filter(note => note.id !== id);
@@ -46,8 +46,8 @@ function App() {
         placeholder="Note description"
         value={formData.description}
       />
-      <button onClick={createNote}>Create Note</button>
-      {/* <button >Create Note</button> */}
+      {/* <button onClick={createNote}>Create Note</button> */}
+      <button >Create Note</button>
       <div style={{marginBottom: 30}}>
         {
           notes.map(note => (
